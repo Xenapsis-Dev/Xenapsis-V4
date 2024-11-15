@@ -12,136 +12,123 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    background-color: rgb(44, 47, 54);
 }
 
-
-.nav-image {
-    width: 25px;
-    height: 25px;
+.nav-container {
+    transition: 500ms ease;
+    width: 200px;
+    margin: 25px 0px 25px 25px;
+    height: calc(100vh - 50px);
+    background-color: rgb(55, 55, 65);
+    border-radius: 20px;
+    position: fixed;
 }
 
-.chevron {
-    transition: 500ms;
-    border-radius: 10px;
+.nav-favicon-chevron {
+    transition: 500ms ease;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 70px;
 }
 
-.chevronimage{
-    width: 50px;
-    height: 50px;
+.title {
+    margin-top: 25px;
+    margin-left: 15px;
 }
 
-.favicon{
-    width: 50px;
-    height: 50px;
-}
-
-.chevron:hover {
-    background-color: aliceblue;
-    transition: 500ms;
-    
+.nav-img {
+    width: 30px;
+    filter: hue-rotate(250);
 }
 
 .nav-button {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    padding: 5px;
-    width: 88%;
-    transition: 500ms;
-    border-radius: 10px;
-}
-
-.nav-title {
-    display: flex;
-    flex-direction: row;
-    margin-top: 15px;
-    justify-content: center;
-    gap: 45%;
+    margin-left: 10px;
     margin-bottom: 25px;
-    transition: 500ms;
-}
-
-.gap {
-    transition: 500ms;
-    gap: 0%;
+    transition: 500ms ease;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .nav-button:hover {
-    background-color: aliceblue;
-    transition: 500ms;
+    transition: 500ms ease;
+    border-radius: 10px;
+    background-color: rgb(75, 81, 100);
 }
 
 .nav-text {
-    transition: opacity 500ms;
-    margin-left: 5px;
-    transform: scaleX(1);
+    transition: 500ms ease;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: rgb(159, 170, 188);
+    transform-origin: left;
 }
 
-.nav-button:hover .nav-link {
-    display: flex;
-    flex-direction: row;
-    margin-left: 15px;
-    padding: 5px;
-    width: 88%;
-    transition: 500ms;
+.nav-ul {
+    margin-top: 30px;
+}
+
+.chevron {
+    transition: 500ms ease;
     border-radius: 10px;
 }
 
-.nav-list {
-    margin-top: 25px;
-}
-
-.sidebar {
-    background-color: beige;
-    width: 250px;
-    height: calc(100% - 50px);
-    margin: 25px 0px 25px 25px;
-    position: fixed;
-    border-radius: 25px;
-    transition: 500ms;
-    
-}
-
-.favicon {
+.logo {
+    transition: 500ms ease;
     width: 50px;
     height: 50px;
-    opacity: 1;
-    transition: opacity 500ms;
-    pointer-events: none;
+    position: relative;
 }
 
-.sidebar.hide .favicon {
-    width: 0px;
-    transition: 500ms;
-    opacity: 0;
-    pointer-events: none;
-    
+.chevron:hover {
+    transition: 500ms ease;
+    background-color: rgb(75, 81, 100);
+    border-radius: 10px;
 }
 
-.sidebar.hide .nav-text{
-    transition: 500ms;
-    transform-origin: left;
+
+
+.nav-container.hide .nav-text {
+    transition: 500ms ease;
     transform: scaleX(0);
     opacity: 0;
-    pointer-events: none;
 }
 
-.sidebar.hide .chevron {
-    transition: 500ms;
+.nav-container.hide .chevron {
+    transition: 500ms ease;
     rotate: 180deg;
 }
 
-
-
-.sidebar.hide .nav-button {
-    padding: 10px;
-    margin-left: 10px;
-    width: 69%;
-    
+.nav-container.hide {
+    transition: 500ms ease;
+    width: 60px;
 }
 
+.nav-container.hide .nav-favicon-chevron {
+    transition: 500ms ease;
+    gap: 0%;
+}
 
-.hide {
-    width: 65px;
-    transition: 500ms;
+.nav-container.hide .logo {
+    transition: 500ms ease;
+    opacity: 0;
+    width: 0px;
+}
+
+.title h1 {
+    transform-origin: left;
+    transition: 500ms ease;
+    color: rgb(159, 170, 188);
+}
+
+.nav-container.hide .title h1 {
+    transition: 500ms ease;
+    transform: scaleX(0);
+    opacity: 0;
+}
+
+.nav-container.hide .nav-button {
+    width: 40px;
 }

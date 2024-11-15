@@ -11,53 +11,57 @@
         <link rel="stylesheet" href="css/main.css">
         <script src="js/sidebar.js"></script>
     </head>
-    <body style="background-color: rgb(255, 255, 255);">
-        <div class="sidebar" id="sidebar">
-            <div class="nav-title" id="nav-title">
-                <button class="favicon"><img class="favicon"  src="imgs/favicon.png"></button>
-                <button onclick="hidesidebar()" class="chevron"><img id="chevron" class="chevronimage" src="imgs/chevron.png"></button>
+    <body>
+        <div class="nav-container" id="nav-container">
+            <div class="nav-top">
+                <div class="nav-favicon-chevron flex flex-row">
+                    <img class="logo" src="imgs/favicon.png">
+                    <button onclick="chevronclick()" ><img class="chevron" src="imgs/chevron.png" style="width: 50px; height: 50px;"></button>
+                </div>
+                <div class="title">
+                    <h1 style="font-size: 23px; text-wrap: nowrap;" >Xenapsis V4</h1>
+                </div>
+                <nav>
+                    <ul class="nav-ul">
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/homeicon.png">
+                                <p1 class="nav-text">Home</p1>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/gicon.png">
+                                <p1 class="nav-text">Games</p1>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/appicon.png">
+                                <p1 class="nav-text">Apps</p1>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/picon.png">
+                                <p1 class="nav-text">Proxy</p1>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/linksicon.png">
+                                <p1 class="nav-text">Links</p1>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="nav-button flex flex-row">
+                                <img class="nav-img" src="imgs/settingicon.png">
+                                <p1 class="nav-text">Setting</p1>
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
             </div>
-            <h1 class="nav-text" style="margin-left: 20px; font-size: 20px;">Xenapsis V4</h1>
-            <nav>
-                <ul class="nav-list flex flex-col" style="gap: 20px;">
-                    <a class="nav-link" href="#">
-                        <li class="nav-button">
-                            <img src="imgs/homeicon.png" class="nav-image">
-                            <span class="nav-text">Home</span>
-                        </li>
-                    </a>
-                    <a class="nav-link" href="#">
-                    <li class="nav-button">
-                        <img src="imgs/gicon.png" class="nav-image">
-                        <p1 class="nav-text">Games</p1>
-                    </li>
-                    </a>
-                    <a class="nav-link" href="#">
-                    <li class="nav-button">
-                        <img src="imgs/appicon.png" class="nav-image">
-                        <span class="nav-text">Apps</span>
-                    </li>
-                    </a>
-                    <a class="nav-link" href="#">
-                    <li class="nav-button">
-                        <img src="imgs/linksicon.png" class="nav-image">
-                        <span class="nav-text">Links</span>
-                    </li>
-                    </a>
-                    <a class="nav-link" href="#">
-                    <li class="nav-button">
-                        <img src="imgs/Picon.png" class="nav-image">
-                        <span class="nav-text">Proxy</span>
-                    </li>
-                    </a>
-                    <a class="nav-link" href="#">
-                    <li class="nav-button">
-                        <img src="imgs/Settingicon.png" class="nav-image">
-                        <span class="nav-text">Settings</span>
-                    </li>
-                    </a>
-                </ul>
-            </nav>
         </div>
     </body>
 </html>
