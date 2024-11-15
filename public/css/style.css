@@ -554,28 +554,12 @@ video {
   display: none;
 }
 
-.collapse {
-  visibility: collapse;
-}
-
-.fixed {
-  position: fixed;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
-}
-
 .flex {
   display: flex;
 }
 
 .flex-row {
   flex-direction: row;
-}
-
-.items-center {
-  align-items: center;
 }
 
 .text-wrap {

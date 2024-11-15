@@ -15,6 +15,20 @@ body {
     background-color: rgb(44, 47, 54);
 }
 
+.closed-text {
+    position: fixed;
+    transition: 500ms ease;
+    margin-left: 70px;
+    font-size: 20px;
+    margin-bottom: 2px;
+    color: rgb(159, 170, 188);
+    transform-origin: left;
+    margin-top: -64px;
+    display: none;
+    opacity: 0; 
+}
+
+
 .nav-container {
     transition: 500ms ease;
     width: 200px;
@@ -70,6 +84,7 @@ body {
     margin-top: 30px;
 }
 
+
 .chevron {
     transition: 500ms ease;
     border-radius: 10px;
@@ -121,6 +136,14 @@ body {
     transform-origin: left;
     transition: 500ms ease;
     color: rgb(159, 170, 188);
+}
+
+.nav-container.hide .closed-text {
+    display: block;
+}
+
+.nav-button:hover + .closed-text {
+    opacity: 1;
 }
 
 .nav-container.hide .title h1 {
