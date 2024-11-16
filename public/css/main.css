@@ -12,7 +12,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    background-color: rgb(44, 47, 54);
+    background-color: rgb(23, 24, 31);
 }
 
 .closed-text {
@@ -34,7 +34,7 @@ body {
     width: 200px;
     margin: 25px 0px 25px 25px;
     height: calc(100vh - 50px);
-    background-color: rgb(55, 55, 65);
+    background-color: rgb(32, 32, 41);
     border-radius: 20px;
     position: fixed;
 }
@@ -68,7 +68,7 @@ body {
 .nav-button:hover {
     transition: 500ms ease;
     border-radius: 10px;
-    background-color: rgb(75, 81, 100);
+    background-color: rgb(49, 53, 65);
 }
 
 .nav-text {
@@ -99,7 +99,7 @@ body {
 
 .chevron:hover {
     transition: 500ms ease;
-    background-color: rgb(75, 81, 100);
+    background-color: rgb(49, 53, 65);
     border-radius: 10px;
 }
 
@@ -131,6 +131,8 @@ body {
     opacity: 0;
     width: 0px;
 }
+
+
 
 .title h1 {
     transform-origin: left;
